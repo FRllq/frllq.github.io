@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刀剑神域</title>
+    <link rel="stylesheet" type="text/css" href="a.css">
+</head>
+<body>
+    <div class="box">
+        <div class="navbox">
+        <ul class="nav">
+            <li>
+                <a href="#">网站首页</a>
+            </li>
+            <li>
+                <a href="./two.html"target="_blank">你的名字</a>
+            </li>
+              
+        </ul>
+        </div>
+        <div class="photo">
+            <div class="photobox">
+                <div class="tut tu1"onclick="change(img[0])">
+                    <img src="./images/3d/an.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu2"onclick="change(img[1])">
+                    <img src="./images/3d/an2.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu3"onclick="change(img[2])">
+                    <img src="./images/3d/an3.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu4"onclick="change(img[3])">
+                    <img src="./images/3d/an4.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu5"onclick="change(img[4])">
+                    <img src="./images/3d/an5.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu6"onclick="change(img[5])">
+                    <img src="./images/3d/an6.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu7"onclick="change(img[6])">
+                    <img src="./images/3d/an7.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu8"onclick="change(img[7])">
+                    <img src="./images/3d/an8.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu9"onclick="change(img[8])">
+                    <img src="./images/3d/an9.jpg" alt="" class="tutsrc">
+                </div>
+                <div class="tut tu10"onclick="change(img[9])">
+                    <img src="./images/3d/an10.jpg" alt="" class="tutsrc">
+                </div>
+                <p>渝</p>
+            </div>
+        </div>
+        <div class="videobox">
+            <div class="leftbox">
+                <p>刀剑神域</p>
+            </div>
+        <video controls width="500px" height="350px" loop="loop" autoplay="autoplay" id="video">
+            <source src="./images/刀剑.mp4">
+        </video>
+        <div class="rightbox"></div>
+    </div>
+    </div>
+    <script>
+        const img = [
+            './images/3d/an.jpg',
+            './images/3d/an2.jpg',
+            './images/3d/an3.jpg',
+            './images/3d/an4.jpg',
+            './images/3d/an5.jpg',
+            './images/3d/an6.jpg',
+            './images/3d/an7.jpg',
+            './images/3d/an8.jpg',
+            './images/3d/an9.jpg',
+            './images/3d/an10.jpg',
+        ]
+        function change(array){
+            document.querySelector('body').style.backgroundImage = 'url('+ array +')'
+            document.querySelector('.tutsrc').style.backgroundImage = 'url('+ array +')'
+        }
+        
+    </script>
+</body> 
+</html>
